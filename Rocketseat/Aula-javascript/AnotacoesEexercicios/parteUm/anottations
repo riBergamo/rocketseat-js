@@ -1,0 +1,126 @@
+Javascript Core(núcleo):
+ - Linguagem de programção que roda no navegador do usuário(front-end)
+    - Exemplo: se clicar em algum botão da página e aparecer uma janela, isso é o Javascript
+    - Alteração do site ou aplicativo, conforme a interação do usuário
+ - Roda também no computador(back-end)
+
+O que podemos fazer:
+ - Criar aplicações web, mobile (react native), desktop (Electron)
+ - Empresas famosas que usam:
+    - Facebook (Instragram, Whatsapp)
+    - Google (Youtube, Gmail, Drive)
+    - Uber
+    - Netflix
+    - Tiktok e etc
+ - 99,99% dos sites web usam JS
+ - Linguagem obrigatória para quem programa front-end web
+
+Curso:
+ - Tipos de dados
+ - Variáveis
+ - Funções
+ - Condicionais
+ - Estruturas de repetição
+
+Dinâmica do curso:
+ - Conceitos e fundamentos
+ - Prática
+ - Revisão
+
+ Sintaxe:
+ - Toda linguagem tem sintaxe
+ - Uma boa comunicação necessita de uma boa sintaxe
+
+Tipos de dados:
+ - Gramática
+    - Elementos e combinações
+    - Falar e escrever corretamente:
+       - Saber escrever
+       - Saber os significados 
+       - Crescer o vocabulário
+
+Dinâmica do aprendizado:
+ - Conceito e escrita
+ - Tipos de dados mais utilizados na linguagem
+
+Number:
+ inteiro
+ reais/float
+ NaN: Not a number
+ Infinity: infinito
+
+Underfined:
+ - indefinido
+Null:
+ - Nulo
+ - Objeto quenão possui nada dentro
+
+Object:
+ - Objeto
+ - Possui Propriedades / Atributos
+ - Funcionalidades / Métodos
+ { propriedade: "valor"}
+
+Array:
+ - Vetores
+ - Uma lista
+ - Agrupamento de dados
+console.log(["leite", "Ovos", "Pão", 3])
+
+Tipos de dados:
+ Conforme o ECMAScript standar temos 9 tipos:
+  - Data Types:
+    - Primitive/ Primitive value
+    - Structural (estruturais)
+    - Structural Primitive 
+  - Primitivos(não sofre alteração):
+    - String 
+    - Boolean
+    - Number
+    - undefined
+    - Symbol 
+    - BigInt 
+  - Estruturais:
+    - Object
+      - Array
+      - Map
+      - Set
+      - Date
+      - ...
+    - Fuction
+  - Primitivo Estrutural: 
+    - null
+
+Variáveis:
+ - São nomes que recebem valores.
+ - Atalhos de código
+ - Identificadores
+ - Palavras reservada para criar uma variável:
+    - var - mutável
+    - let - mutável
+    - const - constante(não pode mudar)
+ - O JS é uma linguagem fracamente tipada e dinâmica:
+    - Variáveis não precisam ter um tipo previamente definido
+    - Podemos mudar o conteúdo da variável
+
+Scope e var:
+ - Escopo determina a visibilidade de alguma var no JS
+ - block statement:
+    - criará um novo escopo (block-scoped)
+
+Nomes de variáveis:
+ - Js é case-sensitive (Sensível ao caso)
+ - Caeita a cadeia de caracteres Unicode
+ Posso:
+    - Inciar com '$' e '_'
+    - Iniciar com letras
+    - Acentos
+    - Letras maísculas e minúsculas
+ Não posso:
+    - Iniciar com números
+    - Colocar espaços
+ Ideal:
+    - Nomes com sentido, que explique o que a variável é ou faz
+    - camelCase
+    - snake_case
+    - Em inglês

@@ -1,0 +1,33 @@
+Diferença entre código e programa:
+
+código: pode ser um trexo do programa 
+Programa: conjunto de códigos
+
+Linguagem de programação
+Input: entrada de dados
+Output: é a resposta para a entrada de dados
+ - Um pouco de inglês
+ - Existem muitas
+ - Da pra utilizar em Games, IA, Machine Learning, WEB
+
+Low-level:
+Baixo nível
+Mais próxima o binário
+  - Mais difícil de escrever e de ler
+  - Mais rápida por causa da pouca interferência de tradução
+Começo da programação 
+  - Assembly
+
+High-level:
+Alto nível
+Próxima da comunicação humana
+  - utilizando if, else, function, etc
+Demora mais para tradução e entendimento
+  - compilar ou interpretar
+  - nada mais que milissegundos
+Exemplo:
+  - JS, Python... 
+
+Sintaxe
+Conjunto de regras da escrita.
+

@@ -1,0 +1,45 @@
+<script>
+    //Recapitulando...
+    //Variáveis e tipos de dados
+    //declaration
+    let name
+    //assignment (atribuição de valores)
+    name = "Riane"
+    //Tipo de dado
+    console.log(typeof name)
+
+    //Agrupamento de declarações
+    let age, isHuman
+    age = 19
+    isHuman = true
+    console.log(name, age, isHuman)
+
+    //concatenando valores
+    console.log('A ' + name + " tem " + age + " anos.")
+    //interpolando valores com template literals or template strings
+    console.log(`A ${name} tem ${age} anos.`)
+
+    //Object
+    const person = {
+        name: 'John',
+        age: 30,
+        weight: 88.6,
+        isAdmin: true
+    
+    }
+    console.log(person.name + ' tem ' + person.age + ' anos, e pesa ' + person.weight + ' Kg.')
+    console.log(person)
+
+    //Array
+    const animals = [
+        'lion',  //0
+        'butterfly',   //1
+        'monkey', //2
+        { // Não é recomendado fazer isso dentro do array pq pode causar confusão
+            name: 'cat',
+            age: 2
+        }
+    ]
+    console.log(animals[3].name)
+</script>
+

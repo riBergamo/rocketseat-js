@@ -1,0 +1,53 @@
+//NodeJS - O motor da nave:
+- ajuda a desenvolver backend e Front End com o js
+- micro serviços
+- construir API (feita no backend) - dados que o backend envia para mobile/desktop/webapp
+- scripts e automação
+- machine laerning
+- I.A
+obs: não é recomendado fazer muito processamento/uso da CPU com node.
+
+//Vantagens:
+- Execução e protipar é rápido
+- Alta escalabilidade
+- Aplicação de ponta
+- JS everywhere
+- Ecosistema gigante
+- Casos de uso:
+  - Netflix
+  - Paypal
+  - mais: http://www.simform.com/nodejs-use-case/
+
+- Software conversa com o Hardware, e hardware conversa com o software.
+- O Sistema operacional (mac, linux, windows) faz parte do software e é responsável por conversar diretamente com a máquina(hardware)
+Software: interno
+Hardware: externo, físico(computador, etc)
+
+//
+!= framework: conjunto de regras e estrategia ja aplicadas em algum tipo de pacote. Exemplo = tem um tipo definido, vc não pode fazer de qualquer jeito.
+//
+JS runtime Enviroment:
+- Node Js não é um framework porque ele é um Runtime Enviroment
+
+//Google V8
+javascript Engine
+ V8:
+- Interpretador de js para linguagem de máquina
+- Criado em c++
+- Baseado nas últimas features do JS
+- Focado para Chrome mas tem todo cuidado de não quebrar o Nodez
+- Não possui a DOM, console, ou File System
+
+// O node ele é:
+- single-threaded
+- non-blocking: ele nao bloqueia novos pedidos do cliente
+- asynchronous: trabalha de maneira assíncronas, ou seja, ele nao fica parado esperando uma resposta do Banco de dados
+
+
+
+
+
+
+
+
+

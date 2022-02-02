@@ -1,0 +1,125 @@
+<!-- Hyperlinks
+    Elemento Âncora : <a>
+        - Anatomia 
+        - Atributos:
+            - globais (title. id, class)
+            - href:
+                - para onde vai quando clicar no link?
+                    url completa 
+                        exemplo : http://google.com
+                    fragmento
+                        exemplo : #fragmento
+                    email 
+                        exemplo: mailto : rrianebergamo@gmail.com
+                    telefone
+                        exemplo : tel: +5514...
+            - download
+                Em vez de abrir o arquivo, ele faz download.
+            - target:
+                _self (padrão) 
+                    Troca a página atual pelo link.
+                _blank
+                    Abre outra guia com o link.
+-->
+Anatomia: &lta herf=""&gtConteúdo&lt/a&gt
+<p>
+    <a href="" download="" target="_blank">Nome do link</a>
+</p>
+
+<!-- Utilizando a tag Âncora -->
+
+<p>Encontre-me: </p>
+<ul>
+    <li>
+        <a href="https://app.rocketseat.com.br/node/o-guia-estelar-de-html/group/links/lesson/utilizando-a-tag-ancora" target="_blank">site</a>
+    </li>
+    <li>
+        <a href="mailto:rrianebergamo@gmail.com" target="_blank">email</a>
+    </li>
+    <li>
+        <a href="tel:+5514997791797" target="_blank">tel</a>
+    </li>
+</ul>
+
+<p>Saiba Mais</p>
+<ul>
+    <li>
+        <a href="#about">Sobre Mim</a>
+    </li>
+    <li>
+        <a href="#history">História</a>
+    </li>
+</ul>
+
+<h2 id = "about">Sobre mim</h2>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum nostrum recusandae et veritatis accusamus impedit provident quaerat! Earum ullam officia.
+
+<h2 id = "history">História</h2>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto sit tenetur, odio accusamus nemo quia. Corrupti natus odit suscipit voluptatum corporis velit, in ex illo exercitationem, ad aperiam cum debitis!
+
+<!-- Conteúdo dos hyperlinks
+    Qualquer conteúdo: não precisa ser texto.
+-->
+<a href="http://google.com">
+    <h1>Conteúdo</h1>
+    <p>Mais Conteúdo</p>
+    <img src="https://source.unsplash.com/random" alt="Imagem aleatória">
+</a>
+
+<!-- URLs e caminhos dos arquivos 
+    - Uniform Resource Locator
+        - https://www.rocketseat.com.br
+        - Sequência de texto que define onde algo está localizado na web 
+    -URL usam caminhos para encontrar arquivos
+
+    - Caminhos dos arquivos
+        - Onde, no explorador de arquivos, um recurso está localizado
+-->
+
+<!--<a href="annotations.html" target="_blank">arquivo no diretório raiz.Opção 1</a> 
+<br> -->
+
+
+<!-- Como navegador pelos diretórios: 
+    - mesmo diretório
+    - entrando em diretórios
+    - saindo de diretórios (se ta dentro de uma pasta e quer voltar pra abrir outra usa ..\) 
+    - diretório raiz (root ou pai)
+-->
+<a href="../semantic.html" target="_blank">arquivos na pasta anterior</a> 
+<br>
+<a href="./anatomy.html" target="_blank">arquivo no diretório raiz(opção 1)</a> 
+<br>
+<a href="annotations.html" target="_blank">arquivo na mesma pasta(opção 2)</a> 
+<br>
+<a href="../outros/annotations.html" target="_blank">entrando em um arquivo na pasta outros</a>
+
+<!--
+    <link> para ícones personalizados
+-->
+
+<!-- favicon básico -->
+<link rel="icon" href="link">
+
+<!-- Para iphone não-retina, ipod touch e androids 2.1+ -->
+<link rel="apple-touch-icon-precomposed" href="link">
+
+<!-- ipad de primeira e segunda geração -->
+<link rel="apple-touch-icon" sizes="48x48" href="link">
+
+<link rel="apple-touch-icon" sizes="72x72" href="link">
+
+<link rel="apple-touch-icon" sizes="96x96" href="link">
+
+<!-- iphone com tela retina de alta resolução -->
+<link rel="apple-touch-icon" sizes="144x144" href="link">
+
+<!-- ipad de terceira geração com tela retina de alta resolução -->
+<link rel="apple-touch-icon" sizes="192x192" href="link">
+
+<link rel="apple-touch-icon" sizes="256x256" href="link">
+
+<link rel="apple-touch-icon" sizes="384x384" href="link">
+
+<link rel="apple-touch-icon" sizes="512x512" href="link">
+

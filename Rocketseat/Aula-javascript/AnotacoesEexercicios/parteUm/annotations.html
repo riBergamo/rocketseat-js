@@ -1,0 +1,65 @@
+<title>Javascript.html</title>
+<script>
+    /* String
+        " " : aspas duplas
+        ' ' : aspas simples
+        ` ` : template literals ou template strings, quebra linhas.
+    */
+    // Interpolação (${x + x})
+    console.log(`Riane ${18 + 1}`)
+    console.log(1 + 1)
+
+    //  Number
+    console.log(33)
+    console.log(2.5)
+    console.log(2.5 + 33)
+    console.log(2.5 === Infinity)
+
+    // Boolean
+    console.log(false)
+    console.log(true)
+
+    //Object
+    console.log({
+        nome: "Riane",
+        idade: 19,
+        andar: function() {
+            console.log('andar')
+        }
+    })
+
+    //Variáveis
+    const clima = "Quente"
+    var idade = 19
+    console.log(clima)
+    console.log(typeof idade)
+
+    //Block statement
+
+    // VAR : 
+    //var global( dentro do <script>) e local (entre as "{}")
+    //hoisting : o js puxa o escopo local para o topo
+    console.log('Meu nome? ', name)
+    {
+        var name = "Riri"
+    }
+    console.log('Meu nome? ', name)
+
+    // LET: 
+    //let só pode ser utlizada dentro do escopo que foi declarada
+    {
+        let age = 19
+        console.log('Minha idade? ', age)
+    }
+
+    // CONST : 
+    //const só pode ser utlizada dentro do escopo que foi declarada.
+    const city = "Chavantes"
+    {
+        let city = "Ourinhos"
+        console.log("Minha não cidade: ", city)
+    }
+    console.log("Minha cidade: ", city)
+    
+</script>
+

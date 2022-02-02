@@ -1,0 +1,139 @@
+<!--  html - Hypertext Markup Language  -->
+<!--  Anatomia das tags (h1, etc) -->
+<h1>Conceitos</h1>
+
+<!--  Aninhamento das tags  
+  Hierarquia
+  Fluxo
+  Posisiconamento
+-->
+<p>
+  Tag para escrever <em>Parágrafo</em>.
+  Hierarquia: p > em
+</p>
+
+<p>
+  Para quebrar a linha use outro p.
+  Fluxo1
+  <p>
+    algumas
+    <a href="">tags</a>
+    não quebram linha.
+  </p>
+  Hierarquia: p1 > p2 > a
+</p>
+
+<p>
+  Aqui a tag br/ <br/> quebra linha
+  Hierarquia: p > br
+</p>
+
+<!--  Elementos vazios (Não tem fechamento) -->
+<img src="" alt="" />
+<input type="text" />
+
+<!--  Atributos html  (Infos extras)  -->
+<img src="imagem.png" alt="Infos extra" />
+
+<!--  Atributos booleanos (Não precisam de conteúdo(ex: disable))  -->
+<input type="text" disabled />
+
+<!--  Aspas 
+  omissão
+  simples
+  duplas
+ -->
+<a href="https://goggle.com">link</a>
+
+<!--  Atributos Globais mais utilizados
+  class:
+      Pode repitir.
+  contenteditable:
+      True ou false, modifica o contéudo ou não.
+  data-*
+  hidden:
+      Deixa o conteúdo insivisel.
+  id:
+      Único.
+  style
+  tabindex:
+      Ordem de mostrar.
+  title:
+      Define um título.
+  Usados para:
+      Aplicar estilo css
+      Acessar pelo js
+-->
+<div class="classe" contenteditable="true" id="name" tabindex="3">conteúdo</div>
+<div
+  class="classe"
+  data-qualquerNomeAqui=""
+  id="name1"
+  style="color: white"
+  tabindex="1"
+>
+  conteúdo
+</div>
+<div class="classe" tabindex="2">conteúdo</div>
+
+<h1>Trabalhando com Elementos</h1>
+
+<!--
+  Conteúdo do texto e caracteres reservados(Usados para nao causar problemas no futuro.)
+  &nbsp             =                      Espaço;
+  (Menor que)  &lt  =                      <
+  (Maior que)  &gt  =                      >
+  &amp              =                      &
+  &quot             =                      ""
+  &apos             =                      ''
+-->
+<p>
+  &nbsp;
+  &lt;
+  &amp;
+  Espaços e linhas &quot; puladas &quot; que 
+  <br>
+  colocamos são ignorados
+  <br>
+  &apos; a não ser usando br &apos; &gt;
+</p>
+
+<!--    Abreviações
+          <abbr>
+-->
+<p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web. </p>
+
+<!-- Detalhes de contato
+        <address>
+-->
+
+<address>
+  <p>Riane Bergamo</p>
+  <strong>Chavantes, SP</strong>
+</address>
+
+<!-- Representando códigos de computador -->
+<code>
+  Parte genérica do código
+</code>
+<pre>
+  Blocos de código, essa tag mantém os espaços em brancos e recuos que eu coloco no código
+</pre>
+<pre>
+  <code>
+    document
+      .querySelector()
+  </code>
+</pre>
+
+<!-- Elementos Genéricos (Pra usar com js ou cs)
+        <div>
+        <span> 
+-->
+<div class="cart">
+  Texto.
+</div>
+<span>Outro</span>
+<span>texto.</span>
+
+<h1>Links</h1>

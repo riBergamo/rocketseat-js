@@ -1,0 +1,67 @@
+
+Webpage:
+ - Resposta dada pelo servidor é uma cópia da página
+        - html
+        - css
+        - Js
+Website estático e dinâmico:
+ - sites
+ - Agrupamento, estruturado de várias páginas Web
+ - Pode ser estático ou dinâmico
+ Estático:
+ - Página não muda
+ - Alteração direto no código e por quem a criou
+ - Não interage com banco de dados
+ Dinâmico:
+ - Página se adapta conforme pedido
+ - Interage com banco de dados
+        - dados + modelo da página = página dinâmica
+ - Modifica sem precisar mexer no código
+ - Com o mesmo modelo da página é gerado uma página em tempo real
+
+O que é uma aplicação Web:
+ - um programa/software que vive no servidor
+        - Linguagem de programção mais complexa
+        - banco de dados
+ - utilizado através de páginas Web e pelo navegador
+ - É mais complexo e possui mais requisitos
+ Exemplo: Facebook, Gmail, Youtube, Figma
+ Desafios: 
+  - Adaptação nos diversos dispositivos(Responsividade)
+  - Performance
+  - Acessibilidade
+        - Visual, Auditiva, SEO
+
+Front-end e Back-end:
+ Cliente (URL) -> navegador (Resquest) -> Servidor (response) -> navegador (HTML, CSS, JS, image, Json, etc) -> Cliente
+ Front-end: 
+ - Cliente(client-side) e Navegador(Browser)
+ - Tecnologias:
+        - html, css, Javascript, images
+        - Constroi o front-end com frameworks e bibliotecas
+ Back-end: 
+ - Servidor(server-side)
+ - Recebe pedido do front-end
+        - Entende e processa o pedido e devolve para o front-end
+        - Regras de negócio da aplicação
+ - Tecnologias:
+        -PFP, Java, Python, Js
+        - Banco de Dados
+
+Aplicação web tradicional:
+ - Recarregar a página pra ter o conteúdo atualizado
+ - Front-end e back-end numa só aplicação
+ - Servidor processa e devolve toda a página de uma só vez
+ 
+ Single Page Aplication (SPA):
+        - A sensação é de ter uma página única
+ - Não precisa recarregar a página pra ser atualizada
+ - Front-end e back-end são aplicações diferentes
+ - Servidor responde a aplicação front-end:
+        - fron-end feito com uso de frameworks
+        - back-end é no formato de API(interface para comunicação)
+
+Alinhamento de jornada:
+ 1. sites estáticos
+ 2. Aplicação web tradicional
+ 3. SPA (mais complexo) 

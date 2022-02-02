@@ -1,0 +1,255 @@
+
+<!-- O que significa CSS?
+Cascading Stryle Sheet
+Código para criar estilos no html
+Html é a estrutura, e o css é a beleza
+É uma linguagem style sheet -->
+
+<link rel="stylesheet" href="style.css">
+
+Menu de Assuntos
+
+<h1>O que significa CSS?</h1>
+<ul>
+    <li>Cascading Stryle Sheet</li>
+    <li>Código para criar estilos no html</li>
+    <li>Html é a estrutura, e o css é a beleza</li>
+    <li>É uma linguagem style sheet</li>
+</ul>
+
+<h2>Anatomia</h2>
+'nome da tag' { <br>
+    &nbsp &nbsp &nbsp propriedade: valor; <br>
+    &nbsp &nbsp &nbsp color: blue; <br>
+} 
+<ul>
+    <li>Selector : prcoura por todos os 'nome da tag'</li>
+    <li>Declaretion : O que esta dentro das chaves, que vai ser aplicadas aos 'nome da tag' que forem encontradas no html</li>
+    <li>Properties : propriedade</li>
+    <li>Property Value : valor da propriedade</li>
+</ul>
+
+<h2>Selectors</h2>
+<h3>Conecta um elemento html com o css</h3>
+Tipos
+<ul>
+    <li>Global selector (*)</li>
+    <li>Element/type selector (h1, h2, p, div)</li>
+    <li>ID Selector (#nomeDoIDnohtml)</li>
+    <li>Class Selector (.nome)</li>
+    <li>Attribute selector, Pseudo-class, Pseudo-element, etc</li>
+</ul>
+
+<h3>HTML</h3>
+
+&lt;div id="nomeDoID" class="nomeClass"&gt; <br>
+&nbsp; &nbsp; &nbsp; &lt;h1&gt;Título&lt;/h1&gt; <br>
+&lt;/div&gt;
+
+<h3>CSS</h3>
+#nomeDoID { <br>
+&nbsp; &nbsp; &nbsp; width: 200px; <br>
+} <br>
+<br>
+.nomeClass { <br>
+&nbsp; &nbsp; &nbsp; margin: 40px;
+} <br>
+<br>
+h1 { <br>
+&nbsp; &nbsp; &nbsp; color:pink; <br>
+&nbsp; &nbsp; &nbsp; font-size: 40px; <br>
+&nbsp; &nbsp; &nbsp; background: black; <br>
+} <br>
+
+<h2>Box model (caixas)</h2>
+<ul>
+    <li>Quase tudo são caixas do css</li>
+    <li>Posicionamentos, tamanhos, espaçamentos, bordas, cores</li>
+    <li>Caixa pode ficar do lado de outra, acima ou abaixo</li>
+    <li>Elementos html são caixas</li>
+</ul>
+
+<h2>Adicionando CSS</h2>
+<dl>
+    <dt>1. inline</dt>
+    <dd>atributo 'style', dentro da tag (style="")</dd>
+    <dt>2. &lt;style&gt;</dt>
+    <dd>tag html que irá conter o css, dentro do corpo html(head)</dd>
+    <dt>3. &lt;link&gt;</dt>
+    <dd>arquivo css externo</dd>
+    <dt>4. @import</dt>
+    <dd>arquivo css interno</dd>
+</dl>
+
+<h2>A cascata</h2>
+<h3>Cascading</h3>
+<P>A ordem de imporância é de cima para baixo, também funciona com a tag style no html.</P>
+Levando em consideração 3 fatores:
+<ol>
+    <li>Origem do estilo</li>
+    <li>Especificidade</li>
+    <li>Importância</li>
+</ol>
+<h4>1. Origem do estilo</h4>
+<p>inline > tag style > tag link </p>
+
+<h4>2. Especificidade</h4>
+<p>Cálculo matemático, onde, cada tipo de seletor e origem do estilo, possuem valores a serem considerados</p>
+<table>
+    <thead>
+        <tr>
+            <th>Força</th>
+            <th>Tipo de seletor e origem do estilo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>Universal selector(*), combinators e negation pseudo-class(:not())</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Element type selector e pseudo-elements(::before, ::after)</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Classes e attribute selector([type="radio"])</td>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>ID Selector</td>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td>Inline</td>
+        </tr>
+    </tbody>
+</table>
+<h4>Regra !important</h4>
+<ul> 
+    <li>Não é considerado boa prática</li>
+    <li>Quebra o fluxo natural da cascata</li>
+    <li>Ela sobrepõe tudo (!important > inline)</li>
+</ul>
+
+<h2>At-rules</h2>
+<ul>
+    <li>Relacionado ao comportamento css</li>
+    <li>Começa com o sinal @ seguido do identificador e valor</li>
+</ul>
+<h3>Exemplos</h3>
+<table>
+    <thead>
+        <tr style="text-align: center;">
+            <th>At-rules</th>
+            <th>Descrição</th>
+            <th>No css</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@import</td>
+            <td>Incluir um css externo</td>
+            <td>@import url ("http://local.com/style.css");</td>
+        </tr>
+        <tr>
+            <td>@media</td>
+            <td>Regras condicionais para dispositivos</td>
+            <td>
+                @media (min-width: 500px) {<br>rules here<br>}
+            </td>
+        </tr>
+        <tr>
+            <td>@font-face</td>
+            <td>Fontes externas</td>
+            <td>
+                @font-face { <br> rules here <br>}
+            </td>
+        </tr>
+        <tr>
+            <td>@keiframes</td>
+            <td>Animation</td>
+            <td>@keyframes nameofanimation { <br> rules here <br> }</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Shorthand</h2>
+<ul>
+    <li>Junção de propriedades</li>
+    <li>Resumido</li>
+    <li>Legível</li>
+    <li>Não considera propriedades anteriores</li>
+    <li>Valores não especificados assumem o valor padrão</li>
+    <li>geralmente a ordem descrita não importa</li>
+    <li>Se ouver muitas propriedades com valores semelhantes pode ocorrer um problema</li>
+    <li id="imp">Algumas propriedades não aceitam shorthand</li>
+</ul>
+<h3>Exemplo: background</h3>
+<h4>Background Properties:</h4>
+<p>
+    background-color: #000; 
+    <br>
+    background-image: url(images/bg.gif); 
+    <br>
+    background-repeat: no-repeat; 
+    <br>
+    background-position: left top; 
+    <br>
+</p>
+<h4>Background Shorthand:</h4>
+<p>
+    background: #000 url(images/bg.gif) no-repeat left top;
+</p>
+
+<h2>Funções</h2>
+<ul>
+    <li>Nome seguido de parentesis</li>
+    <li>Recebe argumentos</li>
+</ul>
+<h3>Exemplo</h3>
+@import url ("http://urlaqui.com/style.css");
+<br>
+{ <br>
+    color: rgb(255, 0, 100); <br>
+    width: calc(100% - 10px); <br>
+}
+
+<h2>Cuidado com a escrita</h2>
+<p>Identação é muito importante:</p>
+<ul>
+    <li>Prestar <strong>muita atenção</strong> nos espaços, pontos e vírgulas, etc.</li>
+</ul>
+<h3>Exemplo</h3>
+<p>Modo correto: </p>
+p { <br>
+&nbsp; &nbsp; &nbsp; margin: 0 auto; <br>
+&nbsp; &nbsp; &nbsp; padding-left: 15px; <br>
+}
+
+<h2>Vendor Prefixes</h2>
+<h3>(Prefixo do browser)</h3>
+<p>Permite que browsers adicione 'features' a fim de colocar em uso alguma novidde que vemos no css</p>
+<h3>Exemplo</h3>
+
+p { <br>
+&nbsp; &nbsp; &nbsp; -webkit-background-clip: text; &nbsp; &nbsp; &nbsp; &nbsp; (Chrome, Safari, IOS, Android)<br>
+&nbsp; &nbsp; &nbsp; -moz-background-clip: text; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Mozilla (firefox))<br>
+&nbsp; &nbsp; &nbsp; -ms-background-clip: text; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Internet Explorer)<br>
+&nbsp; &nbsp; &nbsp; -o-background-clip: text; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Opera) <br>
+}
+<h3>Mais sobre:</h3>
+<a href="http://ireade.github.io/which-vendor-prefixes">http://ireade.github.io/which-vendor-prefixes</a> 
+<br> 
+<a href="http://caniuse.com">http://caniuse.com</a>
+
+
+
+
+
+
+
+
+
+
+
